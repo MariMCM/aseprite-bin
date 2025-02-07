@@ -19,7 +19,7 @@ jobs:
       - name: Build
         id: build
         shell: cmd
-        run: call build.cmd
+        run: cmd /c build.cmd
         env:
           ASEPRITE_VERSION: ${{ github.event.inputs.version }}
 
